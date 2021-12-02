@@ -1,6 +1,6 @@
-# Welcome to Data Structures Tutorial! #
+# Welcome to Data Structures Tutorial!
 
-## Overview: ##
+## Overview:
 
 `Note: Each of these modules will be in Python.` 
 
@@ -16,7 +16,7 @@ In each module, we will describe each data structure, explain what it does and h
 
 There will also be examples in Python, as well as sample solutions.
 
-## Contact Information: ##
+## Contact Information:
 
 >Instructor: Josh Thieme
 
