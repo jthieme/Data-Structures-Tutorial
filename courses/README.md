@@ -7,10 +7,10 @@
 In this tutorial, we will cover the following data structures: queues, linked lists, and trees.
 The following links will each go over the topics respectively.
 
-* [Big-O Notation](0-performance.md)
-* [Queues](1-queues.md) 
-* [Linked Lists](2-linked_lists.md)
-* [Trees](3-trees.md)
+* [Big-O Notation](/courses/performance/0-performance.md)
+* [Queues](/courses/queues/1-queues.md) 
+* [Linked Lists](/courses/linked_lists/2-linked_lists.md)
+* [Trees](/courses/trees/3-trees.md)
 
 In each module, we will describe each data structure, explain what it does and how it works, as well as determining the perfomance in Big O Notation individually.
 
