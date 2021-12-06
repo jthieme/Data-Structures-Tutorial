@@ -4,7 +4,7 @@
 
 To help you understand how trees work, we first understand recursion. This will be explained why later. To keep this module more concise, please review this link: [https://www.geeksforgeeks.org/recursion-in-python/](https://www.geeksforgeeks.org/recursion-in-python/). Once you finish that, then you can come back here to completel this module.
 
-Trees can help keep what we store organized, especially if you're storing something like a list. The performance depends on the structure of the tree, which we'll go over soon, but for the most part, it's performance can be rather O(n) or O(log n). For best performance, we want the former.
+Trees can help keep what we store organized, especially if you're storing something like a list. The performance depends on the structure of the tree, which we'll go over soon, but for the most part, it's performance can be rather O(n) or O(log n). For best performance, we want the latter.
 
 ## What is a Tree?
 
@@ -15,6 +15,8 @@ Let's look at the following picture:
 ![binary_tree.png](binary_tree.png)
 
 Here, we see that the top node, known as the **root**, connects to 2 nodes, known as **leaves** one left, and one right. There is an order to this, and is not random, although it may seem that way at first glance. Can you tell what the order is? If not, don't worry about it. The root has a value of 10, then the left leaf has a value of 5, then the right with a value of 19. The pattern here is whatever value is **less than** the above node, then it goes to the **left**. Otherwise, it goes to the **right**. The pattern continues with the 5 node. 1 is less than 5, so it goes on the left, and 6 is greater than 5, so it goes on the right. This is called a Balanced Binary Tree, also known as a **Binary Search Tree (BST)**, which is inherently balanced.
+
+Performance, wise, if the tree is structured like in the example picuted above, then you could achieve a performance level of O(log n) because you would not be searching every item. Otherwise, if it is structured in a way that the tree is essentially a linked list, (meaning that there is only one side), then that would be performance level of O(n) since you would be searching every item.
 
 ## Programming Examples
 Knowing what you do about linked lists and now recursion, can you see why using recursion would be amazing to use if you were searching for the value 6?

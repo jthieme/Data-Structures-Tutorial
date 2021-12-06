@@ -34,7 +34,7 @@ The step after that would be to have the second nodes previous to disapper. To d
 
 The last step would be to get rid of the last arrow of the first node, which we would also equal to **None**. With all of those steps done, the original second node is now the first!
 
-Seem confusing, don't worry. We're going to look at this in code right now.
+If this seems confusing, don't worry. We're going to look at this in code right now.
 
 ## Programming Examples
 Here's how writing the code to get rid of the first node will look like:
