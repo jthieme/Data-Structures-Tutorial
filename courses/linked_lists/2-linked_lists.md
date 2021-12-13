@@ -24,6 +24,43 @@ In this example, notice the difference here. There are the arrows starting at th
 
 Unlike a queue, which can only be added to the back and removed from the front, a linked list can be added or removed from anywhere!
 
+Here's a picture of how to add to the head of a linked list:
+![linked_list_insert_head.jpeg](linked_list_insert_head.jpeg)
+
+Notice that there is a specific order to this and later operations in order for this to be successful.
+
+Here are the steps:
+
+1) First initiate the new node
+1) Set the new nodes next to the heads previous
+1) Set the heads previous to the new nodes next (otherwise it'll only have one arrow going one direction instead of two arrows going both directions).
+1) Lastly, set the new nodes previous to the head as None.
+
+After following these steps, then you've successfully added or inserted a node as the new head!
+
+Here's how we would add to the tail:
+![linked_list_insert_tail.jpeg](linked_list_insert_tail.jpeg)
+
+The steps here are essentially the same as inserting to the head. The only real difference is it's at the tail. If you need the steps, here they are:
+
+1) Initiate the new node.
+1) Set the new nodes previous to the tails next.
+1) Set the tails next to the new nodes previous (to get arrows going both ways).
+1) Lastly, set the new nodes next to be the tail as None.
+
+See the similarities? Next we will go over inserting in the middle, which can seem a bit more complex. But, don't worry the steps are as follows:
+
+1) Initiate the new node
+1) Set the new nodes previous the the current node (see below).
+1) Set the new nodes next to the next node.
+1) Set the current nodes next to the new node.
+1) Lastly, set the next nodes previous to the new node.
+
+If that seems a bit daunting, try drawing out this process on a whiteboard like the picture shown below one step at a time. 
+
+This is how we would add to the middle:
+![linked_list_insert_middle.jpeg](linked_list_insert_middle.jpeg)
+
 In order to accomplish this, there are a few steps that must be done in order for the expected outcome to actually occur.
 
 To remove the first node from the head:
@@ -34,6 +71,14 @@ The step after that would be to have the second nodes previous to disapper. To d
 
 The last step would be to get rid of the last arrow of the first node, which we would also equal to **None**. With all of those steps done, the original second node is now the first!
 
+If this seems confusing, take a look at the picture below:
+![linked_list_remove_head.jpeg](linked_list_remove_head.jpeg)
+
+This is how to remove from the tail:
+![linked_list_remove_tail.jpeg](linked_list_remove_tail.jpeg)
+
+This is how to remove from the middle:
+![linked_list_remove_middle.jpeg](linked_list_remove_middle.jpeg)
 If this seems confusing, don't worry. We're going to look at this in code right now.
 
 ## Programming Examples
